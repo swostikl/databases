@@ -6,11 +6,12 @@ from goal;
 <img width="1225" alt="Screenshot 2024-09-10 at 9 06 40 PM" src="https://github.com/user-attachments/assets/a3878e4c-19d2-43c7-a1ea-c3b5cd084ec8">
 
 Q. No. 2
-select name, type 
+select name 
 from airport 
-where iso_country="FI";
+where iso_country = "FI";
+<img width="540" alt="Screenshot 2024-09-14 at 10 16 39 PM" src="https://github.com/user-attachments/assets/292f0134-3143-43eb-b24f-fc0c3ca3e814">
 
-<img width="1440" alt="Screenshot 2024-09-11 at 10 14 42 PM" src="https://github.com/user-attachments/assets/ab73330c-3b3f-4632-8c63-bfbb81be4b88">
+
 
 Q. No. 3.
 select name 
@@ -21,7 +22,7 @@ where iso_country="FI" order by name;
 
 Q. No. 4
 select name, type 
-from airports 
+from airport 
 where iso_country="FI" 
 order by type, name; 
 
@@ -44,6 +45,43 @@ where name like "%F%";
 <img width="539" alt="Screenshot 2024-09-11 at 4 42 46 PM" src="https://github.com/user-attachments/assets/3833d6db-0509-4e82-8c67-0a03269101a0">
 
 Q.No.7
+select location 
+from game where 
+screen_name = "Vesa";
+<img width="566" alt="Screenshot 2024-09-14 at 10 26 57 PM" src="https://github.com/user-attachments/assets/7d03444d-ffeb-4edc-bc2d-ac8a3c0e1210">
+
+
+
+
+
+Q.NO.8
+select co2_consumed 
+from game
+where screen_name = "Ilkka";
+<img width="575" alt="Screenshot 2024-09-14 at 10 29 36 PM" src="https://github.com/user-attachments/assets/8d59e3c1-4c02-480f-b7c1-aa8d53b2a610">
+
+
+
+
+
+Q.No.9
+select distinct co2_budget from game;
+
+<img width="442" alt="Screenshot 2024-09-14 at 10 31 20 PM" src="https://github.com/user-attachments/assets/dea6b994-1fb5-4cbc-8915-d3175f59ea55">
+
+
+
+
+
+Q.No.10
+select screen_name , co2_budget, co2_consumed from game where screen_name='Ilkka';
+
+<img width="736" alt="Screenshot 2024-09-14 at 10 38 15 PM" src="https://github.com/user-attachments/assets/cf3ee5b4-84fe-4a85-a1f5-40786dc9f2d6">
+
+
+
+
+
 
 
 
