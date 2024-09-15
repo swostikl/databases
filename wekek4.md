@@ -14,6 +14,8 @@ Q.No. 2
 select screen_name, airport.name
 from game 
 inner join airport on location = ident;
+
+
 <img width="399" alt="Screenshot 2024-09-15 at 8 33 55 AM" src="https://github.com/user-attachments/assets/1f232682-31be-4420-936f-8c66460b9ae6">
 
 
