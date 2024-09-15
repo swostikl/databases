@@ -9,6 +9,8 @@ Q. No. 2
 select name 
 from airport 
 where iso_country = "FI";
+
+
 <img width="540" alt="Screenshot 2024-09-14 at 10 16 39 PM" src="https://github.com/user-attachments/assets/292f0134-3143-43eb-b24f-fc0c3ca3e814">
 
 
