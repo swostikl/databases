@@ -88,7 +88,7 @@ from goal_reached
 where goal_id in(
 select id
 from goal
-where name = "CLOUDS"
+where name = "clouds"
 )
 );
 
