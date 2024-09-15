@@ -116,13 +116,19 @@ select name
 from goal
 where id not in(
 select goal.id
-from goal, goal_reached, game
-where game.id = game_id and goal.id = goal_id and screen_name = "Heini"
+from goal_reached
+where game_id not in (
+select id
+from game
+where screen_name="Heini"
+)
 );
 
 
+<img width="298" alt="Screenshot 2024-09-15 at 10 41 52 AM" src="https://github.com/user-attachments/assets/055a503e-3825-4be7-ad5f-e31b9988cb8d">
 
-<img width="564" alt="Screenshot 2024-09-15 at 10 04 50 AM" src="https://github.com/user-attachments/assets/5738303c-9a64-4a45-8ded-2a3fe16a0b68">
+
+
 
 
 
