@@ -1,4 +1,5 @@
 week4
+Exercises 1
 Q.No.1
 
 select country.name as 'country name' , airport.name as 'airport name'
@@ -47,6 +48,80 @@ left join goal_reached on goal.id=goal_reached.goal_id
 left join game on goal_reached.game_id=game.id;
 
 <img width="436" alt="Screenshot 2024-09-15 at 8 57 28 AM" src="https://github.com/user-attachments/assets/1f2ef598-1bd4-4078-9ac9-192f84a7d304">
+
+
+
+
+Exercises2
+Q.no.1
+select name
+from country
+where iso_country in(
+select iso_country
+from airport
+where name like "Satsuma%"
+);
+<img width="297" alt="Screenshot 2024-09-15 at 9 40 15 AM" src="https://github.com/user-attachments/assets/09afaa77-f988-4d0e-96dc-3297a8920dd8">
+
+
+
+
+Q.no.2
+select name
+from airport where
+iso_country in(
+select iso_country
+from country
+where name = "Monaco"
+);
+<img width="328" alt="Screenshot 2024-09-15 at 9 44 21 AM" src="https://github.com/user-attachments/assets/c330b994-046d-44ad-9e9c-1e81fbaecae8">
+
+
+
+
+Q.No.3
+select screen_name
+from game
+where id in (
+select game_id
+from goal_reached
+where goal_id in(
+select id
+from goal
+where name = "CLOUDS"
+)
+);
+<img width="389" alt="Screenshot 2024-09-15 at 9 51 59 AM" src="https://github.com/user-attachments/assets/11e9ad16-ea59-4aba-aef0-db94f1c89bc0">
+
+
+
+
+Q.No.4
+select country.name
+from country
+where iso_country not in
+(select airport.iso_country
+from airport);
+
+<img width="313" alt="Screenshot 2024-09-15 at 9 55 55 AM" src="https://github.com/user-attachments/assets/730e9fef-7e0a-4dea-b0f0-b701e5166491">
+
+
+
+Q.No.5
+
+select name
+from goal
+where id not in(
+select goal.id
+from goal, goal_reached, game
+where game.id = game_id and goal.id = goal_id and screen_name = "Heini"
+);
+
+
+
+<img width="564" alt="Screenshot 2024-09-15 at 10 04 50 AM" src="https://github.com/user-attachments/assets/5738303c-9a64-4a45-8ded-2a3fe16a0b68">
+
+
 
 
 
