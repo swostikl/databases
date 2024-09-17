@@ -1,5 +1,5 @@
-week4
-Exercises 1
+#week4
+#Exercises 4
 Q.No.1
 
 select country.name as 'country name' , airport.name as 'airport name'
@@ -52,7 +52,7 @@ left join game on goal_reached.game_id=game.id;
 
 
 
-Exercises2
+#Exercises 5
 Q.no.1
 select name
 from country
