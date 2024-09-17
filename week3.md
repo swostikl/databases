@@ -1,4 +1,5 @@
-#week 3
+#week 3 
+# exercise2
 Q.no. 1
 select * 
 from goal;
@@ -76,11 +77,13 @@ select distinct co2_budget from game;
 
 
 Q.No.10
-select screen_name , co2_budget, co2_consumed from game where screen_name='Ilkka';
+set @Co2_left :=0;
+select screen_name , co2_budget, co2_consumed,
+(co2_budget-co2_consumed)as Co2_left
+from game where screen_name='Ilkka';
 
-<img width="736" alt="Screenshot 2024-09-14 at 10 38 15 PM" src="https://github.com/user-attachments/assets/cf3ee5b4-84fe-4a85-a1f5-40786dc9f2d6">
 
-
+<img width="513" alt="Screenshot 2024-09-17 at 6 35 31 AM" src="https://github.com/user-attachments/assets/07553860-96b4-4fe8-9127-6200ec19fd50">
 
 
 
