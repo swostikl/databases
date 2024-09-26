@@ -125,6 +125,46 @@ from airport
 
 
 
+# Exercise 7
+
+Q.no 1
+
+update game
+set location=(select ident from airport where name="Nottingham Airport"), 
+co2_consumed=co2_consumed + 500
+where screen_name="Vesa";
+
+
+select * from goal;
+
+
+<img width="610" alt="7 1" src="https://github.com/user-attachments/assets/b7cfbbb8-72f1-4ead-adfd-4c441c140bbe">
+
+
+
+Q.no 2
+Prepare your own database for the project by deleting all dummy data relating to the game state. To maintain referential integrity, you have to delete the data in a specific order.
+Do you have to delete data first from the game table or from the goal_reached table?
+Question 2Answer
+
+a.game   b.goal_reached
+
+My answer is b. goal reached.
+
+
+Q.no.3
+Delete the dummy data from the goal_reached table.
+
+delete from goal_reached;
+select * from goal_reached;
+
+Q.no.4
+Delete the data from the game table.
+
+delete from game;
+
+select * from game;
+
 
 
 
